@@ -30,6 +30,14 @@ body {
     height: max-content;
 }
 
+.visible {
+    display : bloc
+}
+
+.invisible {
+    display : none
+}
+
 #bgbody {
     margin: 0;
     padding: 0;
