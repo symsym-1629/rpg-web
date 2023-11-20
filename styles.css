@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 body {
-    background-color: #F5EBD1;
+    background-color: #D7FFBE;
     font-family: 'Kanit', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    color: #1A1F1F;
+    color: #104218;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.title1 {
+  background-color: #36E152;
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #104218;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -77,21 +89,21 @@ button {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   box-shadow:inset 2px 2px 2px 0px #94FF52,
    7px 7px 20px 0px rgba(0,0,0,.1),
    4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
 } 
 
 .btn-3 {
-  background: rgb(0,172,238);
-background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
-  width: 130px;
-  height: 40px;
+  background: #38611F;
+  background: linear-gradient(0deg, #68B339 0%, #508A2C 100%);
+  /* width: 130px; */
+  /* height: 40px; */
   line-height: 42px;
   padding: 0;
   border: none;
-  
+
 }
 .btn-3 span {
   position: relative;
@@ -105,7 +117,7 @@ background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
   content: "";
   right: 0;
   top: 0;
-   background: rgba(2,126,251,1);
+   background: #1A6B27;
   transition: all 0.3s ease;
 }
 .btn-3:before {
@@ -127,7 +139,7 @@ background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
   width: 100%;
 }
 .btn-3 span:hover{
-   color: rgba(2,126,251,1);
+   color: #1A6B27;
 }
 .btn-3 span:before,
 .btn-3 span:after {
@@ -135,7 +147,7 @@ background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
   content: "";
   left: 0;
   bottom: 0;
-   background: rgba(2,126,251,1);
+   background: #1A6B27;
   transition: all 0.3s ease;
 }
 .btn-3 span:before {
