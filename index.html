@@ -6,6 +6,8 @@
     <title>Bienvenue sur L'Héritage des anciens ! </title>
     <link rel="stylesheet" href="styles.css">
     <link rel="favicon" href="favicon.ico" />
+    <script src="script.js"></script>
+
 </head>
 <body>
     <div class="title1">
@@ -14,8 +16,10 @@
     </div>
     <p>Bienvenue sur le RPG de L'Héritage... Ici vous rencontrerz divers obstacles afin de vous ralentir dans votre aventure. Certaines issues vous seront fatales, Tout dépendra de vos choix.</p>
     <p>Vous êtes prêt ? Alors c'est parti !</p>
+    <input type="text" name="Player_name" id="login">
+    
     <div class="frame">
-        <a href="aventure/Départ.html"> <button class="custom-btn btn-3"><span>Commencer</span></button></a>
+        <a href="aventure/Départ.html"> <button class="custom-btn btn-3" onclick="startGame()"><span>Commencer</span></button></a>
 
     </div>
 </body>
