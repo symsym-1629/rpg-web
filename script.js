@@ -36,4 +36,3 @@ function transition(issue) {
         btn_cacher.style.display = "block";
     }
 }
-

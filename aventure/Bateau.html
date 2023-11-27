@@ -8,7 +8,19 @@
     <link rel="favicon" href="favicon.ico" />
     <script src="../script.js"></script>
 </head>
-<body background="../images/Bateau_calme.png" class="bgbody">
+<body background="../images/Bateau_calme.png" id="bgbody">
+    <div id="info" onload="barre()" class="info">
+        
+    </div>
+    <div class="textrpg">
+        <h1>En mer...</h1>
+        <div id="intro">
+            <h3>Vous êtes en mer, où voulez vous aller ?</h3>
+            <button class="custom-btn btn-3" onclick="transition('Naufrage')"> Vous naviguez vers la tempête</button>
+            <button class="custom-btn btn-3" onclick="transition('Naufrage')"> Vous naviguez vers la tempête</button>
+            <button class="custom-btn btn-3" onclick="transition('Naufrage')"> Vous naviguez vers la tempête</button>
 
+        </div>
+    </div>
 </body>
 </html>
