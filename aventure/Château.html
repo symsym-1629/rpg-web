@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>En ville...</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="favicon" href="favicon.ico" />
     <script src="../script.js"></script>
 </head>
-<body>
+
+
+<body background="" id="=bgbody"> <!-- A REMPLIR -->
+    <div id="intfo" onload="barre()" class="info">
+    
+    </div>
+    <div class="textrpg">
+        <h1>Au Château</h1>
+        <div id="intro">
+            <h3>Vous avez décidé de retourner au Château, quel habitant allez vous interroger</h3>
+            <button class="custom-btn btn-3" onclick="transition('Boucher')">Vous allez chez le boucher</button>
+            <button class="custom-btn btn-3" onclick="transition('Foule')">Vous interrogez la foule</button>
+            <button class="custom-btn btn-3" onclick="transition('JSP')"></button>
+        </div>
+    </div>
     
 </body>
 </html>
+
+<!-- Je me suis dit que ce serait pas mal d'ajouter un mendiant qui te demande un truc, si tu donnes = plus de force -->
