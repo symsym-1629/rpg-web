@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="favicon" href="favicon.ico" />
+    <script src="../script.js"></script>
+</head>
+<body>
+    <div class="title1">
+        <h1>Où souhaitez-vous allez maintenant?</h1>
+    </div>
+    <p>Interrogez les passants pour trouver des informations, choisissez un lieu sur la carte.</p>
+    <div id="mapdiv">
+        <map name="carte">
+              <area
+              shape="rect"
+              coords="280,260,340,340"
+              href="Bateau.html"
+              title="Partir en bateau" />
+             <!-- cut les areas qui sont déjà utilisées avec la fonction chekPassage() -->
+              <area
+              shape="rect"
+              coords="180,0,310,80" 
+              href="Fôret.html"
+              title="Aller vers la fôret"/>
+
+              <area
+              shape="rect"
+              coords="50,80,180,200"
+              href="Château.html"
+              title="Rester au château" />
+          </map>
+        <img src="../images/Carte.png" alt="Carte du monde" usemap="#carte" class="map"/>
+    </div>
+</body>
+</html> 
