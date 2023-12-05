@@ -37,9 +37,13 @@ function transition(issue) {
     }
 }
 
-function checkPassage(pageName){
-    var page = //récuperer l'élément nom de la page
-    localStorage.setItem() //stockage du nom de la page
+function storePassage(){
+    // stocke la page dans laquelle on est actuellement dans le local storage afin de vois toutes les pages par lesquelles on est passé
+    var passage = localStorage.getItem("passage");
+    passage += window.location.pathname.split("/").pop()
+    localStorage.setItem("passage", passage);
 }
+
+
 // je veux que la page par laquelle on est passé soit sauvegargée pour que lors du passage
 //dans le hub, on ne puisse pas retourner là d'où on vient
