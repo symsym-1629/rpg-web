@@ -66,5 +66,3 @@ function showDeathMessage(){
     var message = localStorage.getItem("deathMessage");
     document.getElementById("raison").innerHTML = message;
 }
-// je veux que la page par laquelle on est passé soit sauvegargée pour que lors du passage
-//dans le hub, on ne puisse pas retourner là d'où on vient
