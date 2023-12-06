@@ -16,14 +16,16 @@ function addCourage(num) {
 function addForce(num) {
     localStorage.setItem("force", parseInt(localStorage.getItem("force")) + num);
 }
-function checkForce(issue, requirement) {
+function checkForce(issue, requirement,isDead) {//isDead --> boolean pour la cascade
     if (requirement <= localStorage.getItem("force")) {
         transition(issue);
         return
     } else {
+        if (isDead == false) {transition("back")}
+        else {
         transition("death");
         deathMessage("Vous vous êtes fait casser la gueule.");
-        return
+        return}
     }
 }
 function name() {

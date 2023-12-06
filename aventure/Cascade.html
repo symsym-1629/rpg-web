@@ -8,9 +8,33 @@
     <link rel="favicon" href="favicon.ico" />
     <script src="../script.js"></script>
 </head>
-<body>
+<body background="../images/Cascade.png" id="bgbody">
+    <div id="info" onload="barre()" class="info">
     
-</body>
-    
+    </div>
+    <div class="textrpg">
+        <h1>La Cascade...</h1>
+        <div id="intro">
+            <h3>Vous voilà donc à la cascade... La femme disait vrai, une atmosphère magique s'y dégage, mais où est le sage ?</h3>
+            <button class="custom-btn btn-3" onclick="transition('tree')"><span>Chercher dans l'arbre</span></button>
+            <button class="custom-btn btn-3" onclick="transition('waterfall')"><span>Explorer dans l'eau</span></button> 
+        </div>
+        <div id="tree" class="invisible">
+            <p>Rien ici, vous aurez peut-être plus de chance vers la cascade ;)</p>
+            <button class="custom-btn btn-3" onclick="transition('intro')"><span>Retour</span></button>
+        </div>
+        <div id="waterfall" class="invisible">
+            <p>Rien ici... Où alors, cet interstice dans la cascade, ne serai-ce pas une porte?</p>
+            <button class="custom-btn btn-3" onclick="checkForce('enter',40,false)"><span>Pousser la porte</span></button>
+        </div>
+        <div id="enter" class="invisible">
+            <p>Vous avez assez de force pour entrer. Une chance !</p> 
+            <a href="sage.html"><button class="custom-btn btn-3"><span>Entrer !</span></button></a>
+        </div>
+        <div id="back" class="invisible">
+            <p>Vous êtes trop faible. Combattez d'autres ennemis pour augmenter votre force</p>
+            <a href="hub.html"><button class="custom-btn btn-3"><span>Retour à la carte</span></button></a>
+        </div>
+    </div>
 </body>
 </html>
