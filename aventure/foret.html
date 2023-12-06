@@ -16,22 +16,22 @@
         <h1>En fôret...</h1>
         <div id="intro">
             <h3>Vous vous retrouvez en fôret, pour rechercher des informations. Malheuresement, vous entendez des bruits de pas derrière vous, vous vous retournez et voyez des bandits armés jusqu'aux dents. Que faites-vous ?</h3>
-            <button class="custom-btn btn-3" onclick="transition('fight')">Vous vous battez</button></a><br>
-            <button class="custom-btn btn-3" onclick="transition('spare')">Vous préférez fuir</button></a><br>
-            <button class="custom-btn btn-3" onclick="transition('death')">Vous faites le mort</button></a><br>
-            <button class="custom-btn btn-3" onclick="transition('friend')">Vous cherchez à devenir amis</button></a><br>
+            <button class="custom-btn btn-3" onclick="checkForce('fight',40)"><span>Vous vous battez</span></button></a><br>
+            <button class="custom-btn btn-3" onclick="transition('spare')"><span>Vous préférez fuir</span></button></a><br>
+            <button class="custom-btn btn-3" onclick="transition('death')"><span>Vous faites le mort</span></button></a><br>
+            <button class="custom-btn btn-3" onclick="transition('friend')"><span>Vous cherchez à devenir amis</span></button></a><br>
         </div>
         <div id="fight" class="invisible">
-            <p>Vous vous battez, mais vous êtes trop faible, vous vous faites tuer.</p>
+            <p>Vous vous battez, Vous tuez tous les brigands et gagnez un peu de courage et de force.</p>
+            <a href="hub.html"><button class="custom-btn btn-3" onclick="addForce(5);addCourage(100)"><span>Continuer</span></button></a>
         </div>  
         <div id="spare" class="invisible">
             <p>Vous fuyez, vous n'aurez pas de points de courage pour cette solution de lâche</p>
+            <a href="hub.html"><button class="custom-btn btn-3"><span>Continuer</span></button></a>
         </div>  
-        <div id="death" class="invisible">
-            <!-- à Remplir -->
-        </div>
         <div id="friend" class="invisible"> 
             <p>Vous devenez ami avec les brigands ils seront avec vous pour le reste de l'aventure</p>
+            <a href="hub.html"><button class="custom-btn btn-3" onclick="addForce(5)"><span>Continuer</span></button></a>
         </div>
 
     </div>

@@ -24,6 +24,10 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+.text1 {
+  margin: 2%;
+  padding: 0,5%;
+}
 .form {
   background-color: #c0ff9a;
   margin: 2%;
@@ -86,7 +90,7 @@ button {
 }
 .custom-btn {
   width: 130px;
-  height: 40px;
+  height: auto ;
   color: #fff;
   border-radius: 5px;
   padding: 10px 25px;
@@ -108,7 +112,7 @@ button {
   background: linear-gradient(0deg, #68B339 0%, #508A2C 100%);
   /* width: 130px; */
   /* height: 40px; */
-  line-height: 42px;
+  line-height: 25px;
   padding: 0;
   border: none;
 

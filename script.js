@@ -36,6 +36,19 @@ function transition(issue) {
     if (issue != "death") {
         btn_cacher = document.getElementById(issue);
         btn_cacher.style.display = "block";
+    } else {
+        // go to death page
+        document.location.href = "/aventure/mort.html";
+    }
+}
+function checkForce(issue, requirement) {
+    if (requirement <= localStorage.getItem("force")) {
+        transition(issue);
+        return
+    } else {
+        transition("death");
+        deathMessage("Vous vous êtes fait casser la gueule.");
+        return
     }
 }
 

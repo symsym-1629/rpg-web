@@ -9,6 +9,22 @@
     <script src="../script.js"></script>
 </head>
 <body background="" onload="storePassage()" id="bgbody">
-    
+    <div id="info" onload="barre()" class="info">
+
+    </div>
+    <div class="textrpg">
+        <h1>Une ile ??</h1>
+        <div id="intro">
+            <h3>Vous arrivez sur une ile, mais elle semble inhabitée... Vous essayez de l'explorer pour trouver de quoi survivre</h3>
+            <button class="custom-btn btn-3" onclick="transition('explore')"><span>Explorer</span></button>
+        </div>
+        <div id="explore" class="invisible">
+            <p>vous tombez sur un village canibale. Que faites vous?</p>
+            <button class="custom-btn btn-3" onclick="transition('death')"><span>Vous vous laissez faire</span></button>
+            <button class="custom-btn btn-3" onclick="transition('fight')"><span>Vous vous battez</span></button>
+            <button class="custom-btn btn-3" onclick="transition('friend')"><span>Vous tentez de négocier avec eux</span></button>
+        </div>
+        
+    </div>
 </body>
 </html>
