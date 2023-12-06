@@ -11,10 +11,10 @@ function startGame() {
 
 }
 function addCourage(num) {
-    localStorage.setItem("courage", localStorage.getItem("courage") + num);
+    localStorage.setItem("courage", parseInt(localStorage.getItem("courage")) + num);
 }
 function addForce(num) {
-    localStorage.setItem("force", localStorage.getItem("force") + num);
+    localStorage.setItem("force", parseInt(localStorage.getItem("force")) + num);
 }
 function checkForce(issue, requirement) {
     if (requirement <= localStorage.getItem("force")) {
