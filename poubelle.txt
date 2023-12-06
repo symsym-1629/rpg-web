@@ -4,4 +4,10 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="favicon" href="favicon.ico" />
     <script src="../script.js"></script>
-https://7pvq5kkh-5500.uks1.devtunnels.ms/
+
+
+
+ <div id="A remplir" class="invisible">
+            <p>TEXTE</p>
+            <a href="hub.html"><button class="custom-btn btn-3" onclick="PAS OBLIGATOIRE"><span>TEXTE</span></button></a>
+        </div>

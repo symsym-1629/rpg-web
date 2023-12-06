@@ -1,13 +1,5 @@
 // startBtn = document.querySelector(".startBtn");
 // startBtn.addEventListener("click", startGame());
-
-
-function addCourage(num) {
-    localStorage.setItem("courage", localStorage.getItem("courage") + num);
-}
-function addForce(num) {
-    localStorage.setItem("force", localStorage.getItem("force") + num);
-}
 function startGame() {
     var name = document.getElementById("login").value;
     localStorage.setItem("name", name);
@@ -17,6 +9,22 @@ function startGame() {
     localStorage.setItem("passage", "");
     localStorage.setItem("deathMessage", "");
 
+}
+function addCourage(num) {
+    localStorage.setItem("courage", localStorage.getItem("courage") + num);
+}
+function addForce(num) {
+    localStorage.setItem("force", localStorage.getItem("force") + num);
+}
+function checkForce(issue, requirement) {
+    if (requirement <= localStorage.getItem("force")) {
+        transition(issue);
+        return
+    } else {
+        transition("death");
+        deathMessage("Vous vous êtes fait casser la gueule.");
+        return
+    }
 }
 function name() {
     var number = "123";
@@ -41,16 +49,7 @@ function transition(issue) {
         document.location.href = "/aventure/mort.html";
     }
 }
-function checkForce(issue, requirement) {
-    if (requirement <= localStorage.getItem("force")) {
-        transition(issue);
-        return
-    } else {
-        transition("death");
-        deathMessage("Vous vous êtes fait casser la gueule.");
-        return
-    }
-}
+
 
 function storePassage(){
     // stocke la page dans laquelle on est actuellement dans le local storage afin de vois toutes les pages par lesquelles on est passé

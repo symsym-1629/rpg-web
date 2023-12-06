@@ -24,7 +24,16 @@
             <button class="custom-btn btn-3" onclick="transition('fight')"><span>Vous vous battez</span></button>
             <button class="custom-btn btn-3" onclick="transition('friend')"><span>Vous tentez de négocier avec eux</span></button>
         </div>
-        
+
+        <div id="fight" class="invisible">
+            <p>Vous les avez battu. Vous avez exploré le village et trouvé de nouvelles armes. Ils avaient un bateau et cela va vous permettre de rentrer au port</p>
+            <a href="hub.html"><button class="custom-btn btn-3" onclick="addForce(5); addCourage(100)"><span>Rentrer au port</span></button></a>
+        </div>
+        <div id="friend" class="invisible">
+            <p>Vous goûtez un peu de leur repas, et vous décidez de rester avec eux</p>
+            <a href=""><button class="custom-btn btn-3" onclick="transition('end')"><span>TEXTE</span></button></a>
+        </div>
+        <!-- FIN ALTERNATIVE ? -->
     </div>
 </body>
 </html>
