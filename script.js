@@ -28,6 +28,10 @@ function checkForce(issue, requirement,isDead) {//isDead --> boolean pour la cas
         return}
     }
 }
+function showCourage() {
+    force = localStorage.getItem("courage");
+    document.getElementById("show").innerHTML = "<p>"+ force +"</p>"
+}
 function name() {
     var number = "123";
     document.getElementById("myText").innerHTML = number;
@@ -41,7 +45,7 @@ function barre() {
 }
 
 function transition(issue) {
-    btn_cacher = document.getElementById("intro");
+    btn_cacher = document.getElementById("intro");//changer intro par autre chose ==> ne cache pas les autres quand on fait un retour arrière
     btn_cacher.style.display = "none";
     if (issue != "death") {
         btn_cacher = document.getElementById(issue);
