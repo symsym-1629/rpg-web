@@ -45,11 +45,13 @@ function barre() {
 }
 
 function transition(issue) {
-    btn_cacher = document.getElementById("intro");//changer intro par autre chose ==> ne cache pas les autres quand on fait un retour arrière
+    var pageToHide = localStorage.getItem("page");
+    btn_cacher = document.getElementById(pageToHide);//changer intro par autre chose ==> ne cache pas les autres quand on fait un retour arrière
     btn_cacher.style.display = "none";
     if (issue != "death") {
         btn_cacher = document.getElementById(issue);
         btn_cacher.style.display = "block";
+        localStorage.setItem("page", issue);
     } else {
         // go to death page
         document.location.href = "/aventure/mort.html";
