@@ -28,10 +28,7 @@ function checkForce(issue, requirement,isDead) {//isDead --> boolean pour la cas
         return}
     }
 }
-function showCourage() {
-    force = localStorage.getItem("courage");
-    document.getElementById("show").innerHTML = "<p>"+ force +"</p>"
-}
+
 function name() {
     var number = "123";
     document.getElementById("myText").innerHTML = number;
@@ -73,4 +70,8 @@ function deathMessage(message){
 function showDeathMessage(){
     var message = localStorage.getItem("deathMessage");
     document.getElementById("raison").innerHTML = message;
+}
+function showCourage() {
+    var courage = localStorage.getItem("courage");
+    document.getElementById("show").innerHTML = courage
 }
