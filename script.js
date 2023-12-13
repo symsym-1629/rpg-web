@@ -55,11 +55,17 @@ function transition(issue) {
     }
 }
 
-
+function forbiddenAccess() {
+    var passage = localStorage.getItem('passage');
+    passage = passage.split(" ");
+    passage.forEach(element => {
+        document.getElementById(element).remove()
+    });
+}
 function storePassage(){
     // stocke la page dans laquelle on est actuellement dans le local storage afin de vois toutes les pages par lesquelles on est passé
     var passage = localStorage.getItem("passage");
-    passage += window.location.pathname.split("/").pop() + " ";
+    passage += window.location.pathname.split("/").pop().split(".")[0] + " ";
     localStorage.setItem("passage", passage);
 }
 
@@ -68,8 +74,9 @@ function deathMessage(message){
 }
 
 function showDeathMessage(){
+    var name = localStorage.getItem("name");
     var message = localStorage.getItem("deathMessage");
-    document.getElementById("raison").innerHTML = message;
+    document.getElementById("raison").innerHTML = name + ", " + message;
 }
 function showCourage() {
     var courage = localStorage.getItem("courage");
