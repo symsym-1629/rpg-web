@@ -60,7 +60,7 @@ function forbiddenAccess() {
     passage = passage.split(" ");
     passage.forEach(element => {
         Area_cacher = document.getElementById(element);
-        Area_cacher.style.display = "none";
+        Area_cacher.remove()
     });
 }
 function storePassage(){
