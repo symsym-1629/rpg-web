@@ -59,7 +59,8 @@ function forbiddenAccess() {
     var passage = localStorage.getItem('passage');
     passage = passage.split(" ");
     passage.forEach(element => {
-        document.getElementById(element).remove()
+        Area_cacher = document.getElementById(element);
+        Area_cacher.style.display = "none";
     });
 }
 function storePassage(){

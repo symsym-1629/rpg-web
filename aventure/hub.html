@@ -14,7 +14,7 @@
     </div>
     <p>Interrogez les passants pour trouver des informations, choisissez un lieu sur la carte.</p>
     <div id="mapdiv">
-        <map name="carte" id="map" onload="forbiddenAccess()">
+        <map name="carte" id="map" ">
             <div id="bateau">
                 <area
                 shape="rect"
@@ -39,5 +39,6 @@
         </map>
         <img src="../images/Carte.png" alt="Carte du monde" usemap="#carte" class="map"/>
     </div>
+    <div onload="forbiddenAccess()"></div><!-- Div pour load  -->
 </body>
 </html> 
