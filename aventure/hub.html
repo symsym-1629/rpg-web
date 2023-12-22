@@ -8,14 +8,14 @@
     <link rel="favicon" href="favicon.ico" />
     <script src="../script.js"></script>
 </head>
-<body>
+<body onload="forbiddenAccess()">
     <div class="title1">
         <h1>Où souhaitez-vous allez maintenant?</h1>
     </div>
     <p>Interrogez les passants pour trouver des informations, choisissez un lieu sur la carte.</p>
     <div id="mapdiv">
-        <map name="carte" id="map" ">
-            <div id="bateau">
+        <map name="carte" id="map">
+            <div id="ile">
                 <area
                 shape="rect"
                 coords="280,260,340,340"
@@ -39,6 +39,5 @@
         </map>
         <img src="../images/Carte.png" alt="Carte du monde" usemap="#carte" class="map"/>
     </div>
-    <div onload="forbiddenAccess()"></div><!-- Div pour load  -->
 </body>
 </html> 

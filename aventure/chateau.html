@@ -10,8 +10,8 @@
 </head>
 
 
-<body background="" id="=bgbody" onload="localStorage.setItem('page','intro');"> <!-- A REMPLIR -->
-    <div id="intfo" onload="barre(); storePassage()" class="info">
+<body background="" id="bgbody" onload="storePassage()"> <!-- A REMPLIR -->
+    <div id="intfo" onload="barre();" class="info">
     
     </div>
     <div class="textrpg">
@@ -19,7 +19,7 @@
         <div id="intro">
             <h3>Vous avez décidé de retourner au Château, quel habitant allez vous interroger</h3>
             <button class="custom-btn btn-3" onclick="transition('mendiant')"><span>Vous allez voir au marché</span></button>
-            <button class="custom-btn btn-3" onclick="transition('foule')"><span>Vous interrogez la foule</span></button>
+            <button class="custom-btn btn-3" onclick="transition('marché')"><span>Vous interrogez la foule</span></button>
         </div>
     
         <div id="mendiant" class="invisible">
@@ -28,7 +28,7 @@
             <button class="custom-btn btn-3" onclick="transition('marché')"><span>Non, cet argent me sera sûrement utile plus tard</span></button>
         </div>
         <div id="marché" class="invisible">
-            <p>Après cette rencontre inopinée, vous interrogez une vieille femme qui vous conseille d'aller voir près de la cascade, une légende raconte qu'un sage répondant à toutes les questions s'y trouve.</p>
+            <p>Vous interrogez une vieille femme qui vous conseille d'aller voir près de la cascade, une légende raconte qu'un sage répondant à toutes les questions s'y trouve.</p>
             <a href="Cascade.html"><button class="custom-btn btn-3"><span>L'écouter</span></button></a>
             <a href="hub.html"><button class="custom-btn btn-3"><span>Chercher encore</span></button></a>
         </div>
