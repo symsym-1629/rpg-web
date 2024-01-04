@@ -19,10 +19,10 @@
             <button class="custom-btn btn-3" onclick="transition('explore')"><span>Explorer</span></button>
         </div>
         <div id="explore" class="invisible">
-            <p>vous tombez sur un village canibale. Que faites vous?</p>
-            <button class="custom-btn btn-3" onclick="transition('death')"><span>Vous vous laissez faire</span></button>
+            <p>vous tombez sur un village cannibale. Que faites vous?</p>
+            <button class="custom-btn btn-3" onclick="transition('death'); deathMessage('Vous êtes devenus un potage.')"><span>Vous vous laissez faire</span></button>
             <button class="custom-btn btn-3" onclick="transition('fight')"><span>Vous vous battez</span></button>
-            <button class="custom-btn btn-3" onclick="transition('friend')"><span>Vous tentez de négocier avec eux</span></button>
+            <button class="custom-btn btn-3" onclick="transition('friend')"><span>Vous gôutez à la cuisine locale</span></button>
         </div>
 
         <div id="fight" class="invisible">
@@ -31,9 +31,12 @@
         </div>
         <div id="friend" class="invisible">
             <p>Vous goûtez un peu de leur repas, et vous décidez de rester avec eux</p>
-            <a href=""><button class="custom-btn btn-3" onclick="transition('end')"><span>TEXTE</span></button></a>
+            <button class="custom-btn btn-3" onclick="transition('end')"><span>Suite</span></button>
         </div>
-        <!-- FIN ALTERNATIVE ? -->
+        <div class="invisible">
+            <p>Ayant trouvé une passion commune autour de la culture nécromancienne, vous restez sur l'île, car le plus important n'est pas votre passé, mais vos nouveaux amis.</p>
+            <a href="../index.html"><button class="custom-btn btn-3"><span>FIN</span></button></a>
+        </div>
     </div>
 </body>
 </html>
